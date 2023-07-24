@@ -7,6 +7,7 @@ const path = require("path");
 const localtunnel = require("localtunnel");
 
 app.set("view-engine", "ejs");
+app.use(express.urlencoded({ extended: true }));
 
 app.use(express.static(path.join(__dirname, "node_modules/bootstrap/dist")));
 app.use(express.static(path.join(__dirname, "public")));

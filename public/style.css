@@ -1,13 +1,20 @@
 .nav_icon {
-  color: black;
+  color: white;
   font-size: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+#nav_link_text {
+  color: white;
+}
+#nav_link_text:hover{
+  color: yellow;
+}
+
 #nav_icon_text {
-  color: rgb(86, 82, 82);
+  color: white;
   font-size: 1.5rem;
 }
 nav {
@@ -87,4 +94,19 @@ nav {
 .nav-link:hover {
   transition: all 0.2s;
   transform: scale(1.1);
+}
+
+.form_container{
+  /* padding: 2rem; */
+  border: 1px solid rgb(143, 143, 143);
+  border-radius: 10px;
+  box-shadow: 11px -3px 20px -8px rgba(0,0,0,0.75);
+}
+
+#deneme{
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, #80d671cb , #27b485cb );
+}
+body{
+  overflow: hidden;
 }
