@@ -1,16 +1,21 @@
-.nav_icon{
+.nav_icon {
   color: black;
   font-size: 1.75rem;
 }
-.home{
+nav {
+  font-weight: 500;
+}
+.home {
+  font-family: "Lato", sans-serif;
+
   height: 95vh;
   background-image: linear-gradient(
       /* arka plan için gradient özelliğiyle opaklık ayarı yapıldı  */ to right
         bottom,
-      rgba(245, 222, 179, 0.599),
-      rgba(222, 184, 135, 0.522)
+      rgba(137, 148, 151, 0.599),
+      rgba(0, 0, 0, 0.67)
     ),
-    url("/images/home-bg.jpg");
+    url("/images/bg-home.jpeg");
   background-size: cover; /*  Resim Arka planı tamamen doldurması için */
   background-position: top; /*  Sayfa küçültüğünde arka planın üst kısmı sabit kalcak şekilde küçülmesi  */
 
@@ -21,4 +26,52 @@
     0 100%
   ); /*Sağ alt kenarda parça kestik (kordinatlar saat yönünde ,clip-pathmaker.com)*/
   position: relative;
+}
+
+#home_title {
+  color: white;
+  font-weight: 400;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  transition: all 0.5s;
+  animation-name: frombottom;
+  animation-duration: 1.2s;
+}
+
+#home_text {
+  color: white;
+  font-weight: 100;
+  font-family: "Courier New", Courier, monospace;
+  font-style: italic;
+  letter-spacing: 0.2rem;
+  animation-name: fromhidden;
+  animation-duration: 1.5s;
+}
+
+@keyframes frombottom {
+  0% {
+    opacity: 0;
+    transform: translateY(15rem);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fromhidden {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
