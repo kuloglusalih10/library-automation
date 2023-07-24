@@ -1,6 +1,14 @@
 .nav_icon {
   color: black;
-  font-size: 1.75rem;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#nav_icon_text {
+  color: rgb(86, 82, 82);
+  font-size: 1.5rem;
 }
 nav {
   font-weight: 500;
@@ -74,4 +82,9 @@ nav {
   100% {
     opacity: 1;
   }
+}
+
+.nav-link:hover {
+  transition: all 0.2s;
+  transform: scale(1.1);
 }
