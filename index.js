@@ -4,13 +4,16 @@ const router = express.Router();
 const app = express();
 const main_routes = require("./routes/main_routes");
 const path = require("path");
+const mysql = require("mysql2");
 const localtunnel = require("localtunnel");
+const sequelize = require('./data/db');
 
 app.set("view-engine", "ejs");
 app.use(express.urlencoded({ extended: true }));
 
 app.use(express.static(path.join(__dirname, "node_modules/bootstrap/dist")));
 app.use(express.static(path.join(__dirname, "public")));
+
 
 (async () => {
 
